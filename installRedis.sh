@@ -3,9 +3,18 @@
 clear
 echo "Going to install Redis"
 
-wget http://redis.googlecode.com/files/redis-2.6.13.tar.gz
-tar xzf redis-2.6.13.tar.gz
-cd redis-2.6.13/src
+echo "Install kernel-headers"
+sudo yum --disableexcludes=main install kernel-headers-2.6.32-279.14.1.el6.openlogic.x86_64
+
+echo "Install GCC"
+yum -y install gcc-c++
+
+read -p 'Enter Redis version to install : (2.6.14) ' version
+version=${version:-2.6.14}
+
+wget http://redis.googlecode.com/files/redis-$version.tar.gz
+tar xzf redis-$version.tar.gz
+cd redis-$version
 make
  
 mkdir -p /usr/local/bin
