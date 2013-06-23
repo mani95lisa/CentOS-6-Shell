@@ -19,3 +19,9 @@ Install MongoDB on CentOS 6.x
 -----
 
     source <(curl -s https://raw.github.com/mani95lisa/CentOS-6-Shell/master/installMongoDB.sh --insecure)
+
+
+Install Redis on CentOS 6.x
+-----
+
+    source <(curl -s https://raw.github.com/mani95lisa/CentOS-6-Shell/master/installRedis.sh --insecure)

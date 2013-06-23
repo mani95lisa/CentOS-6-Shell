@@ -11,7 +11,7 @@ echo 'enabled=1' >> /etc/yum.repos.d/10gen.repo
 
 yum install -y mongo-10gen mongo-10gen-server
 
-service mongod start
 chkconfig mongod on
+service mongod start
 clear
 echo 'MongoDB is installed, running and set to auto-start on reboots.... your still a NoSQL groupie...'
