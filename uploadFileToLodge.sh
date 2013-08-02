@@ -1,0 +1,1 @@
+scp $1 root@lodge:/var/local/public/public

@@ -16,7 +16,8 @@ wget http://redis.googlecode.com/files/redis-$version.tar.gz
 tar xzf redis-$version.tar.gz
 cd redis-$version
 make
- 
+
+cd src
 mkdir -p /usr/local/bin
 cp -pf redis-server /usr/local/bin
 cp -pf redis-benchmark /usr/local/bin
