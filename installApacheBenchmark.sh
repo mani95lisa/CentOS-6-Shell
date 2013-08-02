@@ -7,7 +7,9 @@ yum -y install yum-utils
 mkdir ~/http
 cd ~/http
 yumdownloader httpd
-rpm2cpio httpd-2.2.3-43.el5.centos.3.i386.rpm | cpio -idmv
+read -p 'Enter download rpm : (httpd-2.2.15-15.el6.centos.1.x86_64.rpm) ' rpm
+rpm = ${rpm:httpd-2.2.15-15.el6.centos.1.x86_64.rpm}
+rpm2cpio rpm | cpio -idmv
 mv usr/bin/ab /usr/bin/ab
 cd ~
 rm -rf ~/httpd
