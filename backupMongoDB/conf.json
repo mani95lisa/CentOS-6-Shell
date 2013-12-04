@@ -1,0 +1,7 @@
+{
+    "access_key": "-S31BNj77Ilqwk5IN85PIBoGg8qlbkqwULiraG0x",
+    "secret_key": "QoVdaBFZITDp9hD7ytvUKOMAgohKaB8oa11FJdxN",
+    "bucket": "lodge",
+    "sync_dir": "/Users/mani/pamakids/nodejs/CentOS-6-Shell/backupMongoDB",
+    "debug_level": 1
+}
