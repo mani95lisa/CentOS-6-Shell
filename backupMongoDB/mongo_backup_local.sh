@@ -3,7 +3,8 @@
 MONGODB_SHELL='mongo'
 DUMP_UTILITY='mongodump'
 #SET the bd name which one you want to backup
-DB_NAME='ie_server'
+read -p 'Enter database name to backup: ' db
+DB_NAME=$db
  
 #SET server path where you want to save the file
 CLOUD_PATH='/var/local/mongoDB'
